@@ -44,8 +44,10 @@ AI-powered Graduation Project Management System (GPMS) for Hormuud University. I
 | Overview | AI assignments |
 | --- | --- |
 | ![Admin overview](docs/screenshots/30-admin-overview.png) | ![Admin assignments](docs/screenshots/31-admin-assignments.png) |
-| **Reports & ranking** | **Users** |
-| ![Admin reports](docs/screenshots/32-admin-reports.png) | ![Users](docs/screenshots/35-admin-users.png) |
+| **Reports & ranking** | **Similarity results** (demo data) |
+| ![Admin reports](docs/screenshots/32-admin-reports.png) | ![Similarity results](docs/screenshots/33-admin-similarity-results.png) |
+| **Supervisor model evaluation** (demo data) | **Users** |
+| ![Supervisor model evaluation](docs/screenshots/34-admin-supervisor-model-evaluation.png) | ![Users](docs/screenshots/35-admin-users.png) |
 | **Research visualizations** | **Model comparison** |
 | ![Research visualizations](docs/screenshots/36-research-visualizations.png) | ![Model comparison](docs/screenshots/37-research-model-comparison.png) |
 
