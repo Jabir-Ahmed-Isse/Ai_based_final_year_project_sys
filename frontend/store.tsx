@@ -619,7 +619,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       if (previousProject) {
         setProjects(prev => prev.map(project => project.id === id ? previousProject : project));
       }
-      throw new Error('This project or supervisor is local demo data, not a database record. Refresh the admin page and try again.');
+      throw new Error('This project or supervisor is local sample data, not a database record. Refresh the admin page and try again.');
     }
 
     if (isSupervisorAssignment && isMongoId(id)) {

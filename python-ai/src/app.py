@@ -646,7 +646,7 @@ def fuzzy_match_topic(query: str, available_topics: List[str], threshold: int = 
     matches.sort(key=lambda x: x[1], reverse=True)
     return matches
 
-# In-memory storage for demo (replace with database in production)
+# In-memory storage (replace with database in production)
 project_embeddings = {}
 
 # Smart AI Chat storage - stores project knowledge bases
@@ -666,7 +666,7 @@ def get_text_embedding(text: str) -> np.ndarray:
     model = get_sentence_model()
     return model.encode(text)
 
-# Sample data for demonstration
+# Sample data
 SAMPLE_SUPERVISORS = [
     {"id": "1", "name": "Dr. Ahmed Ali", "expertise": ["Machine Learning", "AI", "Data Science"], "max_students": 5, "current_students": 2},
     {"id": "2", "name": "Dr. Aisha Mohamed", "expertise": ["Web Development", "Software Engineering", "Cloud Computing"], "max_students": 4, "current_students": 1},
@@ -789,7 +789,7 @@ def get_domain_boost(text1: str, text2: str) -> float:
 def generate_project_ideas(interests: str, count: int = 5) -> List[Dict[str, Any]]:
     """Generate project ideas based on interests."""
     # In a real implementation, this would use a more sophisticated approach
-    # This is a simplified version for demonstration
+    # This is a simplified version
     interests_list = [i.strip() for i in interests.split(',')]
     ideas = []
     
@@ -1566,7 +1566,7 @@ def process_document():
         file.save(filepath)
         
         # In a real implementation, you would process the file here
-        # For demo, we'll just return a mock response
+        # Currently returns a placeholder response
         return jsonify({
             "status": "success",
             "filename": filename,
