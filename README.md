@@ -79,8 +79,6 @@ AI-powered Graduation Project Management System (GPMS) for Hormuud University. I
 
 On Windows you can also use `scripts/start-backend.bat`, `scripts/start-frontend.bat` and `scripts/start-python-ai.bat`.
 
-See [docs/RESEARCH_EXPERIMENT_README.md](docs/RESEARCH_EXPERIMENT_README.md) for the research experiment workflow.
-
 ## Author
 
 **Eng. Jabir Ahmed Isse**
