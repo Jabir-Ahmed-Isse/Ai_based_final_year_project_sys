@@ -1,0 +1,5 @@
+{
+  "name": "Hormuud Academic Project System",
+  "description": "AI-Powered Graduation Project Management System for Hormuud University. Features student idea generation, proposal submission, supervisor review with similarity detection, and admin analytics.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,46 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \\\"Error: no test specified\\\" && exit 1",
+        "test:similarity": "node --test test/similarityService.test.js",
+        "research:backup": "node scripts/backupResearchDatabase.js",
+        "research:dry-run": "node scripts/importResearchDataset.js",
+        "research:import": "node scripts/importResearchDataset.js --apply",
+        "research:verify": "node scripts/verifyResearchExperiment.js",
+        "research:rotate-passwords": "node scripts/rotateResearchPasswords.js",
+        "research:similarity": "node scripts/runSimilarityExperiment.js",
+        "research:supervisors": "node scripts/runSupervisorExperiment.js",
+        "research:assignments": "node scripts/buildBalancedAssignments.js",
+        "research:export": "node scripts/exportResearchArtifacts.js",
+        "build": "tsc",
+        "dev": "node src/server.js",
+        "start": "node src/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "@xenova/transformers": "^2.17.2",
+        "bcryptjs": "^3.0.3",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.3",
+        "express": "^5.2.1",
+        "express-validator": "^7.0.1",
+        "jsonwebtoken": "^9.0.3",
+        "mongoose": "^9.0.2",
+        "multer": "^2.0.2"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "^2.4.6",
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.6",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/node": "^25.0.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    }
+}

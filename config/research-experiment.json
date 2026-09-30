@@ -1,0 +1,63 @@
+{
+  "experimentName": "Hormuud CSIT project similarity and supervisor assignment",
+  "datasetTag": "RESEARCH_EXPERIMENT",
+  "sourceWorksheet": "Project Test Dataset",
+  "excludedWorksheets": ["Notes"],
+  "randomSeed": 42,
+  "expectedProjects": 78,
+  "expectedUniqueProjectPairs": 3003,
+  "expectedSupervisors": 20,
+  "expectedSupervisorScoresPerModel": 1560,
+  "models": {
+    "tfidf": {
+      "name": "scikit-learn TfidfVectorizer",
+      "wordNgrams": [1, 2],
+      "characterNgrams": [3, 5],
+      "normalization": "l2",
+      "wordWeight": 0.7,
+      "characterWeight": 0.3
+    },
+    "sentence_bert": {
+      "name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "normalizeEmbeddings": true,
+      "batchSize": 32
+    },
+    "bge_m3": {
+      "name": "BAAI/bge-m3",
+      "normalizeEmbeddings": true,
+      "batchSize": 32,
+      "representation": "dense"
+    }
+  },
+  "fieldWeights": {
+    "title": 0.2,
+    "description": 0.2,
+    "problem_statement": 0.2,
+    "research_objectives": 0.15,
+    "features": 0.15,
+    "technologies_tools": 0.1
+  },
+  "riskThresholds": {
+    "medium": 40,
+    "high": 70
+  },
+  "supervisorWeights": {
+    "semanticExpertise": 0.8,
+    "technologyAndSkills": 0.1,
+    "previousProjectsAndPublications": 0.05,
+    "workloadAvailability": 0.05
+  },
+  "annotation": {
+    "labels": {
+      "0": "Different",
+      "1": "Partially related",
+      "2": "Highly similar"
+    },
+    "minimumIndependentAnnotators": 2,
+    "preferredIndependentAnnotators": 3,
+    "developmentSplit": 0.6,
+    "validationSplit": 0.2,
+    "testSplit": 0.2,
+    "splitUnit": "project"
+  }
+}
