@@ -1,4 +1,4 @@
-# AI_Based_final_year_project_life_cycle_management_system
+# Ai_based_final_year_project_sys
 
 AI-powered Graduation Project Management System (GPMS) for Hormuud University. It covers the full final-year project life cycle: idea generation, proposal submission, AI similarity detection, supervisor recommendation and review, and admin analytics.
 
